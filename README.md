@@ -1,6 +1,6 @@
 Prototype
 =========
-Prototype provides a concise syntax to define POJOs (Plain Old Java Objects). It saves developers the need to write repetitive boilerplate code and writes it instead of them.
+Prototype provides a concise syntax to define data (and value) types. It saves developers the need to write repetitive boilerplate code and writes it instead of them.
 
 Prototype based classes are immutable and disallow `null` as field values by default. This behavior can be overriden using the provided annotations.
 
