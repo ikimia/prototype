@@ -2,9 +2,7 @@ Prototype
 =========
 Prototype provides a concise syntax to define POJOs (Plain Old Java Objects). It saves developers the need to write repetitive boilerplate code and writes it instead of them.
 
-Prototype based classes are immutable by default and include all-args constructor, getters
-and equals, hashCode and toString implementations.
-Other variations of prototype based classes are described below.
+Prototype based classes are immutable and disallow `null` as field values by default. This behavior can be overriden using the provided annotations.
 
 Prototype is required only in compile time and requires JDK 1.6 or later.
 
