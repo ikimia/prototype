@@ -15,7 +15,7 @@ import java.lang.annotation.*;
  * The auto-generated classes are described as following:
  * </p>
  * <ol>
- *     <li>They will be in the same package as the prototype.</li>
+ *     <li>They will be produced in the same package as the prototype.</li>
  *     <li>They will be declared {@code public final}.</li>
  *     <li>Their name will be the same as the prototype's without the leading underscore.</li>
  *     <li>
@@ -56,14 +56,14 @@ import java.lang.annotation.*;
  *
  * public final Pet {
  *     private final String name;
- *     private final int age;
- *     private String voice;
+ *     private int age;
+ *     private final String voice;
  *
- *     public Point(String name, int age) {...}
+ *     public Pet(String name, String voice) {...}
  *     public String getName() {...}
  *     public int getAge() {...}
+ *     public void setAge(int age) {...}
  *     public String getVoice() {...}
- *     public void setVoice(String voice) {...}
  *     &#064;Override public int hashCode() {...}
  *     &#064;Override public boolean equals(Object o) {...}
  *     &#064;Override public String toString() {...}
