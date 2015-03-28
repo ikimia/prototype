@@ -1,6 +1,7 @@
 package io.kimia.prototype;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import io.kimia.prototype.tools.InMemoryCompiler;
 import org.testng.annotations.Test;
@@ -30,6 +31,6 @@ public class ProcessorIssuesTest {
                 name, "@io.kimia.prototype.Prototype class " + name + "{" + source + "}");
         Diagnostic<? extends JavaFileObject> diagnostic = diagnostics.getDiagnostics().get(0);
         assertEquals(diagnostic.getKind(), Diagnostic.Kind.ERROR);
-        assertEquals(diagnostic.getMessage(null), "mem:///" + name + ".java:1: " + message);
+        assertTrue(diagnostic.getMessage(null).endsWith(message));
     }
 }
