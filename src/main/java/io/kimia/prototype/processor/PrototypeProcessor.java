@@ -9,7 +9,6 @@ import java.util.Set;
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.annotation.processing.SupportedAnnotationTypes;
-import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.*;
 import javax.lang.model.util.Elements;
@@ -27,7 +26,6 @@ import javax.tools.Diagnostic;
  * @see Prototype
  */
 @SupportedAnnotationTypes("io.kimia.prototype.Prototype")
-@SupportedSourceVersion(SourceVersion.RELEASE_6)
 public class PrototypeProcessor extends AbstractProcessor {
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
@@ -71,6 +69,11 @@ public class PrototypeProcessor extends AbstractProcessor {
             }
         }
         return false;
+    }
+
+    @Override
+    public SourceVersion getSupportedSourceVersion() {
+        return SourceVersion.latestSupported();
     }
 
     private String checkPreconditions(Element element) {
