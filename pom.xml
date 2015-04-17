@@ -7,6 +7,32 @@
     <groupId>io.kimia</groupId>
     <artifactId>prototype</artifactId>
     <version>0.1</version>
+
+    <name>Prototype</name>
+    <description>Prototype is a library for generating Java objects out of prototype definitions.</description>
+    <url>https://github.com/ikimia/prototype</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Itay Kimia</name>
+            <email>ikimia@gmail.com</email>
+            <url>https://github.com/ikimia</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/ikimia/prototype</url>
+        <connection>scm:git:git//github.com/ikimia/prototype.git</connection>
+        <developerConnection>scm:git:git@github.com:ikimia/prototype.git</developerConnection>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
