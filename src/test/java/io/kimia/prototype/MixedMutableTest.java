@@ -18,9 +18,7 @@ public class MixedMutableTest extends BasePrototypeTest<MixedMutable> {
     public MixedMutableTest() {
         super(MixedMutable.class,
                 new Class<?>[] { Number.class, boolean.class },
-                new String[] {
-                        "getString", "setString", "getNumber", "isBool", "equals", "hashCode", "toString"
-                });
+                new String[] { "getString", "setString", "getNumber", "isBool" });
     }
 
     @Override

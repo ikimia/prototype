@@ -12,7 +12,7 @@ public class MutableNullableTest extends BasePrototypeTest<MutableNullableField>
     public MutableNullableTest() {
         super(MutableNullableField.class,
                 new Class<?>[0],
-                new String[] { "getS", "setS", "equals", "hashCode", "toString" });
+                new String[] { "getS", "setS" });
     }
 
     @Override

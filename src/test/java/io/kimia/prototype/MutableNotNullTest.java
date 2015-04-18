@@ -18,7 +18,7 @@ public class MutableNotNullTest extends BasePrototypeTest<MutableNotNullField> {
     public MutableNotNullTest() {
         super(MutableNotNullField.class,
                 new Class<?>[0],
-                new String[] { "getS", "setS", "equals", "hashCode", "toString" });
+                new String[] { "getS", "setS" });
     }
 
     @Test(expectedExceptions = NullPointerException.class)

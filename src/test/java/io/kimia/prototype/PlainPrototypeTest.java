@@ -18,7 +18,7 @@ public class PlainPrototypeTest extends BasePrototypeTest<TestPoint> {
     public PlainPrototypeTest() {
         super(TestPoint.class,
                 new Class<?>[] { int.class, int.class },
-                new String[] { "getX", "getY", "equals", "hashCode", "toString" });
+                new String[] { "getX", "getY" });
     }
 
     @Test

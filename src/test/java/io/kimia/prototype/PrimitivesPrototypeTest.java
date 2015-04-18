@@ -28,10 +28,7 @@ public class PrimitivesPrototypeTest extends BasePrototypeTest<AllPrimitives> {
                         byte.class, char.class, short.class, int.class,
                         float.class, long.class, double.class, boolean.class
                 },
-                new String[] {
-                        "getB", "getC", "getS", "getI", "getF", "getL", "getD", "isBool",
-                        "equals", "hashCode", "toString"
-                });
+                new String[] { "getB", "getC", "getS", "getI", "getF", "getL", "getD", "isBool" });
     }
 
     @Override

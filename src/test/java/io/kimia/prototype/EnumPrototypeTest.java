@@ -20,7 +20,7 @@ public class EnumPrototypeTest extends BasePrototypeTest<TestCard> {
     public EnumPrototypeTest() {
         super(TestCard.class,
                 new Class<?>[] { Suit.class, Value.class },
-                new String[] { "getSuit", "getValue", "equals", "hashCode", "toString" });
+                new String[] { "getSuit", "getValue" });
     }
 
     @Override

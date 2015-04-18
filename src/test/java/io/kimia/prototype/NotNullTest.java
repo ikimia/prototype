@@ -16,7 +16,7 @@ public class NotNullTest extends BasePrototypeTest<NotNullField> {
     public NotNullTest() {
         super(NotNullField.class,
                 new Class<?>[] { String.class },
-                new String[] { "getS", "equals", "hashCode", "toString" });
+                new String[] { "getS" });
     }
 
     @Test(expectedExceptions = NullPointerException.class)

@@ -19,7 +19,7 @@ public class MutableTest extends BasePrototypeTest<MutableTestPoint> {
     public MutableTest() {
         super(MutableTestPoint.class,
                 new Class<?>[0],
-                new String[] { "getX", "getY", "setX", "setY", "equals", "hashCode", "toString" });
+                new String[] { "getX", "getY", "setX", "setY" });
     }
 
     @Test

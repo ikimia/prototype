@@ -13,16 +13,24 @@ import java.util.Arrays;
  * Object methods contracts to be tested on all prototype outcomes.
  */
 public abstract class BasePrototypeTest<T> {
+    private static final String[] COMMON_DECLARED_METHODS = { "equals", "hashCode", "toString" };
+
     private final Class<T> tType;
     private final Class<?>[] expectedConstructorParameterTypes;
     private final String[] expectedDeclaredMethods;
 
     protected BasePrototypeTest(
-            Class<T> tType, Class<?>[] expectedConstructorParameterTypes, String[] expectedDeclaredMethods) {
+            Class<T> tType, Class<?>[] expectedConstructorParameterTypes, String[] specificDeclaredMethods) {
 
         this.tType = tType;
         this.expectedConstructorParameterTypes = expectedConstructorParameterTypes;
-        this.expectedDeclaredMethods = expectedDeclaredMethods;
+        this.expectedDeclaredMethods = contact(specificDeclaredMethods, COMMON_DECLARED_METHODS);
+    }
+
+    private static String[] contact(String[] first, String[] second) {
+        String[] result = Arrays.copyOf(first, first.length + second.length);
+        System.arraycopy(second, 0, result, first.length, second.length);
+        return result;
     }
 
     @Test

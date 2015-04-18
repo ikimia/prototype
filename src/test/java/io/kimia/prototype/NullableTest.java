@@ -12,7 +12,7 @@ public class NullableTest extends BasePrototypeTest<NullableField> {
     public NullableTest() {
         super(NullableField.class,
                 new Class<?>[] { String.class },
-                new String[] { "getS", "equals", "hashCode", "toString" });
+                new String[] { "getS" });
     }
 
     @Override
